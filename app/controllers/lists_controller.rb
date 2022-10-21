@@ -9,6 +9,7 @@ class ListsController < ApplicationController
     @list = List.new(list_params)
     # 3. データをデータベースに保存するためのsaveメソッド実行
     if @list.save
+      flash[:notice] = "List was successfully created"
     # 4. 詳細画面へリダイレクト
       redirect_to list_path(@list.id)
     else
