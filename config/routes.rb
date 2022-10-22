@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
+
   get 'top' => 'home#top'
   resources :lists
 end
-
 #  resources :lists
 # なんと！！　これらが一括で生成できてしまうのです！！
   # get 'lists/new'

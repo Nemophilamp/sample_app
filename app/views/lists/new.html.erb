@@ -9,7 +9,7 @@
 <% end %>
 
 <!-- form_with部分-->
-<%= form_with model: @list, url:'/lists', method: :post do |f| %>
+<%= form_with model: @list, url:'/lists' do |f| %>
   <h4>タイトル</h4>
   <%= f.text_field :title %>
 
